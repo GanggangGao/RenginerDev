@@ -1,0 +1,36 @@
+
+sudo echo 'zacharyspark'
+
+echo 'Strat Download...'
+
+curl -o cycript.zip https://cache.saurik.com/cycript/mac/cycript_0.9.594.zip
+
+echo 'Successfully Download!'
+
+echo 'unziping...'
+
+mkdir cycript
+
+unzip -n cycript.zip -d cycript
+
+sudo mv cycript /opt/
+
+sudo awk '{print}BEGIN{print("#A configuration environment.\nexport CYPATHDIR=/opt/cycript")}'  ~/.bash_profile  >output.txt 
+
+sudo awk '{print}BEGIN{print("")}'  output.txt  >  ~/.bash_profile
+
+sudo rm -rf coutput.txt 
+
+sudo sed -i '' 's/PATH=/PATH=$CYPATHDIR:/g'  ~/.bash_profile
+
+sudo mkdir -p /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/
+
+sudo ln -s /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/libruby.2.3.0.dylib /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/libruby.2.0.0.dylib
+
+sudo echo "Successfully!"
+
+
+
+
+
+
