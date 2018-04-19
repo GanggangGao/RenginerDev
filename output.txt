@@ -1,0 +1,10 @@
+#A configuration environment.
+export CYPATHDIR=/opt/cycript
+
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export HKSHELL=/opt/cycript_0.9.594/ConnectionShell/
+export PATH=/bin:/usr/bin:/usr/local/bin:"${PATH}":$HKSHELL
+
