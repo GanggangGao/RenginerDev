@@ -19,7 +19,7 @@ sudo awk '{print}BEGIN{print("#A configuration environment.\nexport CYPATHDIR=/o
 
 sudo awk '{print}BEGIN{print("")}'  output.txt  >  ~/.bash_profile
 
-sudo rm -rf coutput.txt 
+sudo rm -rf output.txt
 
 sudo sed -i '' 's/PATH=/PATH=$CYPATHDIR:/g'  ~/.bash_profile
 
