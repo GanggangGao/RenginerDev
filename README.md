@@ -36,7 +36,7 @@ sudo ln -s /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/librub
 ```
 需要一键配置的请注意
 **关闭SIP**
-当你在系统文件、文件夹下，创建新的文件添加新的文件夹时，有的时候会提示你权限不够 SO
+当你在系统文件、文件夹下，创建新的文件添加新的文件夹时，有的时候会提示安全原因无法修改系统文件 SO
 ```
 电脑重启按住command+R，进入恢复模式
 打开终端，输入csrutil disable，重启
