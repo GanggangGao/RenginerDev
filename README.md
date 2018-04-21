@@ -34,6 +34,14 @@ sudo mkdir -p
 #🔗源文件
 sudo ln -s /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/libruby.2.3.0.dylib /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/libruby.2.0.0.dylib
 ```
-
+需要一键配置的请注意
+**关闭SIP**
+当你在系统文件、文件夹下，创建新的文件添加新的文件夹时，有的时候会提示你权限不够 SO
+```
+电脑重启按住command+R，进入恢复模式
+打开终端，输入csrutil disable，重启
+想再次打开csrutil enable
+微软不高兴了就打着安全的晃子搞了个SB，苹果不高兴了就打着安全的晃子搞了这个SIP，真会玩。
+```
 
 
