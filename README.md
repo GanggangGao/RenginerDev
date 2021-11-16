@@ -1,5 +1,5 @@
 #引言
-Cycript是一个可以调试App的一个工具，目前只是了解到实时的去调试App上的内容； 
+Cycript是一个可以调试App的一个工具 
 ![支持的语言](https://upload-images.jianshu.io/upload_images/7980283-81f0fdd544cc7058.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##配置环境
